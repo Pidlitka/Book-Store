@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий Магазин | Асортимент</title>
+    <meta name="description" content="Зайцева Анна Практична робота">
+    <meta name="keywords" content="Зайцева Анна Практична робота">
+    <meta name="author" content="Зайцева Анна">
+    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body class="accessible">
+    <section class="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="indexA.html">Головна</a></li>
+                    <li><a href="booksA.html">Асортимент</a></li>
+                    <li><a href="blogA.html">Блог</a></li>
+                    <li><a href="contentA.html">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="shopping-cart">
+                    <a href="userA.html"><i class="fa-solid fa-user"></i></a>
+                    <a href="books.html"><i class="fa-solid fa-eye-low-vision"></i></a>
+                </div>
+                <div class="menu-icon" id="menu-icon">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="section-header">
+                <select id="sortOptions">
+                    <option value="title">Сортувати за назвою</option>
+                    <option value="author">Сортувати за автором</option>
+                    <option value="price">Сортувати за ціною</option>
+                </select>
+                <div class="filter_buttons">
+                    <button class="active" data-filter="Все">Все</button>
+                    <button data-filter="Романтика">Романтика</button>
+                    <button data-filter="Фентезі">Фентезі</button>
+                    <button data-filter="Фантастика">Фантастика</button>
+                    <button data-filter="Біографія">Біографія</button>
+                </div>
+            </div>
+            <div class="books-container">
+                <div class="book-card" data-filter="Романтика" data-title="Мертві романтики" data-author="Ешлі Постон"
+                    data-price="150">
+                    <img src="images/1.jpg">
+                    <h3>Мертві романтики</h3>
+                    <span class="price">150 грн</span>
+                </div>
+                <div class="book-card" data-filter="Романтика" data-title="Убивство Роджера Екройда"
+                    data-author="Агата Крісті" data-price="190">
+                    <img src="images/2.jpg">
+                    <h3>Убивство Роджера Екройда</h3>
+                    <span class="price">190 грн</span>
+                </div>
+                <div class="book-card" data-filter="Фантастика" data-title="Велика загибель"
+                    data-author="Джеса Гаттінсґс" data-price="100">
+                    <img src="images/63180_126712_k.jpg">
+                    <h3>Велика загибель</h3>
+                    <span class="price">100 грн</span>
+                </div>
+                <div class="book-card" data-filter="Біографія" data-title="Померти знову" data-author="Тесс Ґеррітсен"
+                    data-price="250">
+                    <img src="images/4.jpg">
+                    <h3>Померти знову</h3>
+                    <span class="price">250 грн</span>
+                </div>
+                <div class="book-card" data-filter="Жахи" data-title="Знищ мене" data-author="Тагере Мафі"
+                    data-price="50">
+                    <img src="images/5.jpg">
+                    <h3>Знищ мене</h3>
+                    <span class="price">50 грн</span>
+                </div>
+                <div class="book-card" data-filter="Романтика" data-title="Мертві романтики" data-author="Ешлі Постон"
+                    data-price="150">
+                    <img src="images/1.jpg">
+                    <h3>Мертві романтики</h3>
+                    <span class="price">150 грн</span>
+                </div>
+                <div class="book-card" data-filter="Романтика" data-title="Убивство Роджера Екройда"
+                    data-author="Агата Крісті" data-price="190">
+                    <img src="images/2.jpg">
+                    <h3>Убивство Роджера Екройда</h3>
+                    <span class="price">190 грн</span>
+                </div>
+                <div class="book-card" data-filter="Фантастика" data-title="Велика загибель"
+                    data-author="Джеса Гаттінсґс" data-price="100">
+                    <img src="images/63180_126712_k.jpg">
+                    <h3>Велика загибель</h3>
+                    <span class="price">100 грн</span>
+                </div>
+                <div class="book-card" data-filter="Біографія" data-title="Померти знову" data-author="Тесс Ґеррітсен"
+                    data-price="250">
+                    <img src="images/4.jpg">
+                    <h3>Померти знову</h3>
+                    <span class="price">250 грн</span>
+                </div>
+                <div class="book-card" data-filter="Фентезі" data-title="Знищ мене" data-author="Тагере Мафі"
+                    data-price="50">
+                    <img src="images/5.jpg">
+                    <h3>Знищ мене</h3>
+                    <span class="price">50 грн</span>
+                </div>
+
+                <div class="book-card" data-filter="Романтика" data-title="Мертві романтики" data-author="Ешлі Постон"
+                    data-price="150">
+                    <img src="images/1.jpg">
+                    <h3>Мертві романтики</h3>
+                    <span class="price">150 грн</span>
+                </div>
+                <div class="book-card" data-filter="Фантастика" data-title="Убивство Роджера Екройда"
+                    data-author="Агата Крісті" data-price="190">
+                    <img src="images/2.jpg">
+                    <h3>Убивство Роджера Екройда</h3>
+                    <span class="price">190 грн</span>
+                </div>
+                <div class="book-card" data-filter="Біографія" data-title="Велика загибель"
+                    data-author="Джеса Гаттінсґс" data-price="100">
+                    <img src="images/63180_126712_k.jpg">
+                    <h3>Велика загибель</h3>
+                    <span class="price">100 грн</span>
+                </div>
+                <div class="book-card" data-filter="Фентезі" data-title="Померти знову" data-author="Тесс Ґеррітсен"
+                    data-price="250">
+                    <img src="images/4.jpg">
+                    <h3>Померти знову</h3>
+                    <span class="price">250 грн</span>
+                </div>
+                <div class="book-card" data-filter="Фентезі" data-title="Знищ мене" data-author="Тагере Мафі"
+                    data-price="50">
+                    <img src="images/5.jpg">
+                    <h3>Знищ мене</h3>
+                    <span class="price">50 грн</span>
+                </div>
+
+                <div class="book-card" data-filter="Фентезі" data-title="Ґудзики та мереживо"
+                    data-author="Пенелопа Скай" data-price="150">
+                    <img src="images/6.jpg">
+                    <h3>Ґудзики та мереживо</h3>
+                    <span class="price">150 грн</span>
+                </div>
+                <div class="book-card" data-filter="Романтика" data-title="Убивство Роджера Екройда"
+                    data-author="Агата Крісті" data-price="190">
+                    <img src="images/2.jpg">
+                    <h3>Убивство Роджера Екройда</h3>
+                    <span class="price">190 грн</span>
+                </div>
+                <div class="book-card" data-filter="Фантастика" data-title="Велика загибель"
+                    data-author="Джеса Гаттінсґс" data-price="100">
+                    <img src="images/63180_126712_k.jpg">
+                    <h3>Велика загибель</h3>
+                    <span class="price">100 грн</span>
+                </div>
+                <div class="book-card" data-filter="Фентезі" data-title="Померти знову" data-author="Тесс Ґеррітсен"
+                    data-price="250">
+                    <img src="images/4.jpg">
+                    <h3>Померти знову</h3>
+                    <span class="price">250 грн</span>
+                </div>
+                <div class="book-card" data-filter="Фентезі" data-title="Ґудзики та мереживо"
+                    data-author="Пенелопа Скай" data-price="50">
+                    <img src="images/6.jpg">
+                    <h3>Ґудзики та мереживо</h3>
+                    <span class="price">50 грн</span>
+
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer" id="contact-section">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h2>Книжковий Магазин</h2>
+                    <p>Обирайте наш книжковий магазин для вигідних покупок! У нас ви знайдете широкий асортимент книг за
+                        доступними цінами. Ми пропонуємо тільки якісну літературу та зручні умови для покупок. Чекаємо
+                        вас у
+                        нашому магазині!</p>
+                    <p class="copyright">Copyright © 2024 Книжковий Магазин. All rights reserved.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакти</h3>
+                    <p>Адреса: вулиця Хрещатик, 34, Київ, Україна</p>
+                    <p>Телефон: 0632222562</p>
+                    <p>Email: <a href="#" class="link">books@ukr.net</a></p>
+                    <p>Email: <a href="#" class="link">books@gmail.com</a></p>
+                    <div class="social-links-2">
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Підписка на розсилку</h3>
+                    <form class="subscribe-form">
+                        <input type="email" id="email-input" placeholder="Email" required>
+                        <button type="button" class="btn subscribe-btn" id="subscribe-btn">Підписатися</button>
+                    </form>
+                    <p>Підпишіться на отримування новинок</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("subscribe-btn").addEventListener("click", function () {
+                let emailInput = document.getElementById("email-input").value;
+                if (emailInput) {
+                    alert("Ви успішно підписалися!");
+                    document.getElementById("subscribe-message").classList.remove("hidden");
+                } else {
+                    alert("Будь ласка, введіть свій імейл.");
+                }
+            });
+        </script>
+        <script>
+
+            document.getElementById("sortOptions").addEventListener("change", function () {
+                let sortBy = this.value;
+                let bookLists = document.querySelectorAll(".books-container");
+
+                bookLists.forEach(bookList => {
+                    let books = Array.from(bookList.getElementsByClassName("book-card"));
+
+                    books.sort((a, b) => {
+                        let aValue = a.dataset[sortBy];
+                        let bValue = b.dataset[sortBy];
+
+                        if (sortBy === "price") {
+                            return parseFloat(aValue) - parseFloat(bValue);
+                        }
+                        return aValue.localeCompare(bValue);
+                    });
+
+                    books.forEach(book => bookList.appendChild(book));
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const filterButtons = document.querySelectorAll(".filter_buttons button");
+                const bookLists = document.querySelectorAll(".books-container");
+
+                const filterCards = (e) => {
+                    const filter = e.target.getAttribute("data-filter");
+
+                    filterButtons.forEach(button => button.classList.remove("active"));
+                    e.target.classList.add("active");
+
+                    bookLists.forEach(bookList => {
+                        const productCards = bookList.querySelectorAll(".book-card");
+                        productCards.forEach(card => {
+                            if (filter === "Все" || card.getAttribute("data-filter") === filter) {
+                                card.classList.remove("hide");
+                            } else {
+                                card.classList.add("hide");
+                            }
+                        });
+                    });
+                };
+
+                filterButtons.forEach(button => button.addEventListener("click", filterCards));
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const body = document.querySelector("body.accessible");
+
+                if (body) {
+                    body.style.backgroundColor = "#ffffff";
+                    body.style.color = "#000000";
+                    body.style.fontSize = "2em";
+
+                    body.querySelectorAll("span").forEach(span => {
+                        span.style.fontSize = "18px";
+                        span.style.color = "#000000";
+                    });
+
+                    body.querySelectorAll("a").forEach(link => {
+                        link.style.color = "#000000";
+                        link.style.textDecoration = "underline";
+                    });
+
+                    body.querySelectorAll("h1, h2, h3").forEach(header => {
+                        header.style.fontSize = "38px";
+                        header.style.color = "#000000";
+                    });
+
+                    const navbar = body.querySelector(".navbar");
+                    if (navbar) {
+                        navbar.style.backgroundImage = "none";
+                        navbar.style.backgroundColor = "#ffffff";
+                    }
+                    const footer = body.querySelector(".footer");
+                    if (footer) {
+                        footer.style.backgroundImage = "none";
+                        footer.style.backgroundColor = "#ffffff";
+                    }
+                    const btn3 = body.querySelector(".subscribe-btn");
+                    if (btn3) {
+                        btn3.style.backgroundColor = "#000000";
+                    }
+                    const discounts = document.querySelectorAll("#sortOptions");
+                    discounts.forEach(disc => {
+                        disc.style.backgroundColor = "#000000";
+                        disc.style.color = "#ffffff";
+                    });
+                    const disc = document.querySelectorAll(".filter_buttons button");
+                    disc.forEach(disc => {
+                        disc.style.backgroundColor = "#000000";
+                        disc.style.color = "#ffffff";
+                    });
+
+                    body.querySelectorAll("p").forEach(p => {
+                        p.style.fontSize = "32px";
+                        p.style.color = "#000000";
+                    });
+                }
+            });
+
+        </script>
+        <script type="text/javascript" src="script.js"></script>
+    </section>
+</body>
+
+</html>

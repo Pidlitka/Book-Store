@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="images/900px-Book-icon-bible.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий Магазин | Контакти</title>
+    <meta name="description" content="Зайцева Анна Практична робота">
+    <meta name="keywords" content="Зайцева Анна Практична робота">
+    <meta name="author" content="Зайцева Анна">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="books.html">Асортимент</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="content.html">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="shopping-cart">
+                    <a href="user.html"><i class="fa-solid fa-user"></i></a>
+                    <a href="contentA.html"><i class="fa-solid fa-eye-low-vision"></i></a>
+                </div>
+                <div class="menu-icon" id="menu-icon">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+        <section class="contact-section">
+            <div class="contact-form">
+                <h2 id="form-title" class="reg-title">Ваший фідбек</h2>
+                <form id="login-form">
+                    <input type="text" id="username" placeholder="Ім'я" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="phone" placeholder="Телефон" required pattern="\d{10,15}">
+                    <textarea id="message" rows="4" placeholder="Повідомлення" required></textarea>
+                    <button type="button" class="subscribe-btn" onclick="toggleForm()">
+                        Надіслати</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.6779325150233!2d30.521497!3d50.44709939999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cff97953f977%3A0xefc95498135bfc84!2z0KHQtdC90YEg0L3QsCDQpdGA0LXRidCw0YLQuNC60YM!5e0!3m2!1suk!2sua!4v1740494410502!5m2!1suk!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <br>
+        </section>
+        <footer class="footer" id="contact-section">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h2>Книжковий Магазин</h2>
+                    <p>Обирайте наш книжковий магазин для вигідних покупок! У нас ви знайдете широкий асортимент
+                        книг за
+                        доступними цінами. Ми пропонуємо тільки якісну літературу та зручні умови для покупок.
+                        Чекаємо
+                        вас у нашому магазині!</p>
+                    <p class="copyright">Copyright © 2024 Книжковий Магазин. All rights reserved.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакти</h3>
+                    <p>Адреса: вулиця Хрещатик, 34, Київ, Україна</p>
+                    <p>Телефон: 0632222562</p>
+                    <p>Email: <a href="#" class="link">books@ukr.net</a></p>
+                    <p>Email: <a href="#" class="link">books@gmail.com</a></p>
+                    <div class="social-links-2">
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Підписка на розсилку</h3>
+                    <form class="subscribe-form">
+                        <input type="email" id="email-input" placeholder="Email" required>
+                        <button type="button" class="btn subscribe-btn" id="subscribe-btn">Підписатися</button>
+                    </form>
+                    <p>Підпишіться на отримування новинок</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("subscribe-btn").addEventListener("click", function () {
+                let emailInput = document.getElementById("email-input").value;
+                if (emailInput) {
+                    alert("Ви успішно підписалися!");
+                    document.getElementById("subscribe-message").classList.remove("hidden");
+                } else {
+                    alert("Будь ласка, введіть свій імейл.");
+                }
+            });
+        </script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </section>
+</body>
+
+</html>

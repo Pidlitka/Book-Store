@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="images/900px-Book-icon-bible.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий Магазин | Користувач</title>
+    <meta name="description" content="Зайцева Анна Практична робота">
+    <meta name="keywords" content="Зайцева Анна Практична робота">
+    <meta name="author" content="Зайцева Анна">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body class="accessible">
+    <section class="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="indexA.html">Головна</a></li>
+                    <li><a href="booksA.html">Асортимент</a></li>
+                    <li><a href="blogA.html">Блог</a></li>
+                    <li><a href="contentA.html">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="shopping-cart">
+                    <a href="userA.html"><i class="fa-solid fa-user"></i></a>
+                    <a href="user.html"><i class="fa-solid fa-eye-low-vision"></i></a>
+                </div>
+                <div class="menu-icon" id="menu-icon">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+
+        <section class="contact-section">
+            <div class="contact-form">
+                <h2 id="form-title" class="reg-title">Log In/Sign Up</h2>
+                <form id="login-form">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit" class="subscribe-btn">Log In</button>
+                    <button type="button" class="subscribe-btn" onclick="toggleForm()">
+                        Sign Up</button>
+                </form>
+                <form id="register-form" style="display: none;">
+                    <input type="text" id="new-username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="new-password" placeholder="Password" required>
+                    <button type="submit" class="subscribe-btn">Sign Up</button>
+                    <button type="button" class="subscribe-btn" onclick="toggleForm()">Already have an account?
+                        Log In</button>
+                </form>
+            </div>
+        </section>
+
+
+        <footer class="footer" id="contact-section">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h2>Книжковий Магазин</h2>
+                    <p>Обирайте наш книжковий магазин для вигідних покупок! У нас ви знайдете широкий асортимент книг за
+                        доступними цінами. Ми пропонуємо тільки якісну літературу та зручні умови для покупок. Чекаємо
+                        вас у нашому магазині!</p>
+                    <p class="copyright">Copyright © 2024 Книжковий Магазин. All rights reserved.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакти</h3>
+                    <p>Адреса: вулиця Хрещатик, 34, Київ, Україна</p>
+                    <p>Телефон: 0632222562</p>
+                    <p>Email: <a href="#" class="link">books@ukr.net</a></p>
+                    <p>Email: <a href="#" class="link">books@gmail.com</a></p>
+                    <div class="social-links-2">
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Підписка на розсилку</h3>
+                    <form class="subscribe-form">
+                        <input type="email" id="email-input" placeholder="Email" required>
+                        <button type="button" class="btn subscribe-btn" id="subscribe-btn">Підписатися</button>
+                    </form>
+                    <p>Підпишіться на отримування новинок</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("subscribe-btn").addEventListener("click", function () {
+                let emailInput = document.getElementById("email-input").value;
+                if (emailInput) {
+                    alert("Ви успішно підписалися!");
+                    document.getElementById("subscribe-message").classList.remove("hidden");
+                } else {
+                    alert("Будь ласка, введіть свій імейл.");
+                }
+            });
+        </script>
+        <script>
+            function toggleForm() {
+                const loginForm = document.getElementById('login-form');
+                const registerForm = document.getElementById('register-form');
+                const title = document.getElementById('form-title');
+
+                if (loginForm.style.display === 'none') {
+                    loginForm.style.display = 'block';
+                    registerForm.style.display = 'none';
+                    title.textContent = 'Log In';
+                } else {
+                    loginForm.style.display = 'none';
+                    registerForm.style.display = 'block';
+                    title.textContent = 'Sign Up';
+                }
+            }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const body = document.querySelector("body.accessible");
+
+                if (body) {
+                    body.style.backgroundColor = "#ffffff";
+                    body.style.color = "#000000";
+                    body.style.fontSize = "2em";
+
+                    body.querySelectorAll("span").forEach(span => {
+                        span.style.fontSize = "18px";
+                        span.style.color = "#000000";
+                    });
+
+                    body.querySelectorAll("a").forEach(link => {
+                        link.style.color = "#000000";
+                        link.style.textDecoration = "underline";
+                    });
+
+                    body.querySelectorAll("h1, h2, h3").forEach(header => {
+                        header.style.fontSize = "2em";
+                        header.style.color = "#000000";
+                    });
+                    const disc = document.querySelectorAll(".subscribe-btn");
+                    disc.forEach(disc => {
+                        disc.style.backgroundColor = "#000000";
+                        disc.style.color = "#ffffff";
+                    });
+                    const navbar = body.querySelector(".navbar");
+                    if (navbar) {
+                        navbar.style.backgroundImage = "none";
+                        navbar.style.backgroundColor = "#ffffff";
+                    }
+                    const footer = body.querySelector(".footer");
+                    if (footer) {
+                        footer.style.backgroundImage = "none";
+                        footer.style.backgroundColor = "#ffffff";
+                    }
+                    body.querySelectorAll("p").forEach(p => {
+                        p.style.fontSize = "32px";
+                        p.style.color = "#000000";
+                    });
+                }
+            });
+
+        </script>
+        <script type="text/javascript" src="script.js"></script>
+    </section>
+</body>
+
+</html>
